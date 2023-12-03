@@ -1,0 +1,53 @@
+.logo {
+  font-size: 50px;
+  color: $color-primary;
+  padding: 0.5rem;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+}
+
+.main-name {
+  font-family: $font-nunito;
+  font-size: 50px;
+  color: $color-secondary;
+  @include textStyles;
+}
+
+.sub-name {
+  font-family: $font-josefinSans;
+  font-size: 18px;
+  color: $color-secondary;
+  @include textStyles;
+}
+
+.main-heading {
+  font-family: $font-dancingScript;
+  font-size: 110px;
+  font-weight: 300;
+  color: $color-primary;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-family: $font-josefinSans;
+  font-size: 50px;
+  font-weight: 300;
+  color: $color-secondary;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  padding: 1rem;
+  font-family: $font-josefinSans;
+  color: $color-primary;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 1s;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
+}
