@@ -17,3 +17,52 @@
     margin-top: 20px;
   }
 }
+.about-us {
+  height: 90vh;
+  display: flex;
+  justify-items: center;
+
+  &-left {
+    width: 40%;
+    img {
+      width: 100%;
+      opacity: 0.5;
+      border-radius: 50%;
+    }
+  }
+  &-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.2rem;
+    .main-heading {
+      font-family: $font-dancingScript;
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .sub-heading {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .stars {
+      margin: 16px 0;
+    }
+    .star {
+      font-size: 15px;
+      color: $color-primary;
+      margin-left: 10px;
+    }
+    .description {
+      text-align: justify;
+      color: $color-secondary;
+      font-size: 18px;
+      line-height: 25px;
+      font-family: $font-josefinSans;
+      &::first-letter {
+        padding-left: 40px;
+      }
+    }
+  }
+}
