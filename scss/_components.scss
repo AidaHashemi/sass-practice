@@ -51,3 +51,62 @@
     color: $color-dark;
   }
 }
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay {
+    @extend %fullSpace;
+    @include flexLayout();
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba($color-secondary, 0.3);
+    color: $color-white;
+    z-index: 10;
+    transition: left 0.5s;
+
+    &-heading {
+      @include textStyles;
+      font-family: $font-dancingScript;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: $color-primary;
+    }
+    &-paragraph {
+      @include textStyles;
+      font-family: $font-dancingScript;
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: $color-primary;
+    }
+
+    &-btn {
+      width: 150px;
+      height: 40px;
+      color: $color-primary;
+      background-color: $color-white;
+      outline: none;
+      font-family: $font-josefinSans;
+      font-size: 16px;
+      border: 1px solid $color-primary;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+  &-img {
+    @extend %fullSpace;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}

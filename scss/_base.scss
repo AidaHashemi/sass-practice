@@ -3,6 +3,8 @@ $color-black: #000;
 $color-primary: #d3ab55;
 $color-secondary: #ddd;
 $color-green: #00cc83;
+$color-white: #fff;
+
 $font-dancingScript: "Dancing Script", cursive;
 $font-josefinSans: "Josefin Sans", sans-serif;
 $font-nunito: "Nunito", sans-serif;
@@ -33,4 +35,9 @@ $font-nunito: "Nunito", sans-serif;
 
 body {
   background-color: $color-dark;
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
 }
