@@ -69,7 +69,7 @@
     position: absolute;
     top: 0;
     left: -100%;
-    background-color: rgba($color-secondary, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     color: $color-white;
     z-index: 10;
     transition: left 0.5s;
@@ -84,8 +84,8 @@
     }
     &-paragraph {
       @include textStyles;
-      font-family: $font-dancingScript;
-      font-size: 20px;
+      font-family: $font-josefinSans;
+      font-size: 18px;
       margin-bottom: 30px;
       text-align: center;
       color: $color-primary;

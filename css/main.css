@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: rgba(221, 221, 221, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   z-index: 10;
   transition: left 0.5s;
@@ -107,8 +107,8 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
   margin-bottom: 30px;
   text-align: center;
   color: #d3ab55;
@@ -156,9 +156,10 @@ body {
 }
 
 .about-us {
-  height: 90vh;
+  height: 110vh;
   display: flex;
   justify-items: center;
+  align-items: center;
 }
 .about-us-left {
   width: 40%;
@@ -179,33 +180,79 @@ body {
 }
 .about-us-right .main-heading {
   font-family: "Dancing Script", cursive;
-  font-size: 70px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 .about-us-right .sub-heading {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .about-us-right .stars {
-  margin: 16px 0;
+  margin: 14px 0;
 }
 .about-us-right .star {
-  font-size: 15px;
+  font-size: 12px;
   color: #d3ab55;
   margin-left: 10px;
 }
 .about-us-right .description {
   text-align: justify;
   color: #ddd;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Josefin Sans", sans-serif;
 }
 .about-us-right .description::first-letter {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 1rem;
+}
+.footer-header .logo {
+  font-size: 30px;
+}
+.footer-header .main-name {
+  font-size: 30px;
+}
+.footer-header .sun-name {
+  font-size: 20px;
+}
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer .social-media-item {
+  list-style: none;
+}
+.footer .social-media-link {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 35px;
+  transition: color 0.7s;
+}
+.footer .social-media-link:hover {
+  color: #d3ab55;
+}
+.footer-copyright-paragraph {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #ddd;
 }/*# sourceMappingURL=main.css.map */
